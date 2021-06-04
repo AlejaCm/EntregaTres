@@ -1,0 +1,41 @@
+{{>header}}
+<h1> Listado de inscripciones </h1>
+
+<form class="row g-3" action="/ListaInscripciones" method="post">
+
+
+	<div class="col-md-4">
+    <label for="validationServer05" class="form-label">Curso</label>
+   <select name="id">
+     {{#each res}}
+       <option value="{{this._id}}">
+         {{this.NombreCurso}}
+       </option>
+
+     {{/each}}
+   </select>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+    </div>
+
+
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">Nombre</th>
+				<th scope="col">correo</th>
+		
+	
+
+			</tr>
+			
+		</thead>
+		<tbody>
+			{{{MostrarEstudiantes Estudiantes}}}
+		</tbody>
+	</table>
+	<div class="col-12">
+    <button class="btn btn-success" type="submit">Ver Lista</button>
+  </div>
+</form>
+{{>footer}}

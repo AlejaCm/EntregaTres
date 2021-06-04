@@ -1,0 +1,31 @@
+{{>header}}
+
+<form action="/registrar" method="POST">
+  {{{mensaje}}}
+  
+	<h1> Crear nuevo curso</h1>
+
+	<form class="row g-3">
+  <div class="col-md-6">
+    <div class="col-md-6">
+    <label for="NombreCurso" class="form-label">Nombre del curso</label>
+    <input type="text" class="form-control" name="NombreCurso" required>
+  </div>
+  <div class="col-md-6">
+    <label for="Duracion" class="form-label">Duracion</label>
+    <input type="text" class="form-control" name="Duracion" required>
+  </div>
+  <div class="col-md-6">
+    <label for="Costo" class="form-label">Costo</label>
+    <input type="text" class="form-control" name="Costo" required>
+  </div>
+    <label for="ID" class="form-label">ID del curso</label>
+    <input type="text" class="form-control" name="ID" required>
+  </div>
+  <br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-success">Crear</button>
+  </div>
+</form>
+
+{{>footer}}

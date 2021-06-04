@@ -1,0 +1,23 @@
+{{>header}}
+{{{mensaje}}}
+
+<h1>Lista de los cursos</h1>
+<form action="/eliminar" method="post">
+
+<table class="table">
+<thead>
+<th>eliminar</th>	
+<th>Nombre Curso</th>
+<th>Duracion</th>
+<th>Costo</th>
+<th>ID</th>
+</thead>
+<tbody>
+
+
+{{{listar res}}} 
+</tbody>
+</table>
+</form>
+
+{{>footer}}
